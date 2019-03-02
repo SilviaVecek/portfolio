@@ -11,8 +11,7 @@ const Home = ({ children }) => {
             <div className="home__seagull-flying">
                 <div className="home__seagull-flapping"></div>
             </div>
-            <div className="home__skyline"></div>
-            <div className="home__ocean">
+            <div className="home__skyline">
                 {children}
             </div>
         </div>
