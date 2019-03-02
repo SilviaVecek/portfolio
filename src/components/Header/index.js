@@ -2,14 +2,16 @@ import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
 import './styles.scss';
 
+const grabElement = (e) => document.querySelector(e).offsetTop;
+
+const ListItem = ({label, page, link}) => (
+    <li className="header-nav__list-item">
+        <a className={classnames('header-nav__list-link', { 'header-nav__list-link--active': page === link })} href={`#${link}`}>{label}</a>
+    </li>
+)
+
 const Header = () => {
     const [ page, setPage ] = useState(null);
-
-    const grabElement = (e) => {
-        return (
-            document.querySelector(e).offsetTop
-        ) 
-    }
 
     const handleScroll = (e) => {
         const scroll = window.scrollY;
@@ -32,6 +34,7 @@ const Header = () => {
         };
     });
 
+
     return (
         <header className="header">
             <div className="header__bar header__bar--first"></div>
@@ -41,19 +44,19 @@ const Header = () => {
                     <img className="header-nav__face" src="/images/Face.svg" />
                 </a>
                 <ul className="header-nav__list">
-                    <li className="header-nav__list-item">
-                        <a className={classnames('header-nav__list-link', { 'header-nav__list-link--active': page === 'about' })} href="#about">About</a>
-                    </li>
-                    <li className="header-nav__list-item">
-                        <a className={classnames('header-nav__list-link', { 'header-nav__list-link--active': page === 'projects' })} href="#projects">Projects</a>
-                    </li>
-                    <li className="header-nav__list-item">
-                        <a className={classnames('header-nav__list-link', { 'header-nav__list-link--active': page === 'contact' })} href="#contact">Contact</a>
-                    </li>
+                    <ListItem label="About" page={page} link="about"/>
+                    <ListItem label="Projects" page={page} link="projects"/>
+                    <ListItem label="Contact" page={page} link="contact"/>
+
                 </ul>
             </div>
         </header>
     );
 };
+
+
+
+
+
 
 export default Header;
