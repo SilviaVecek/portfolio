@@ -11,9 +11,10 @@ class App extends Component {
 
                 <Header />
 
-                <Home />
+                <Home>
+                    <Silvitko />
+                </Home>
 
-                <Silvitko />
 
                 <div className="content">
                     <div className="about" id="about"></div>
