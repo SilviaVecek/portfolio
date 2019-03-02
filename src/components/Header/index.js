@@ -5,15 +5,24 @@ import './styles.scss';
 const Header = () => {
     const [ page, setPage ] = useState(null);
 
+    const grabElement = (e) => {
+        return (
+            document.querySelector(e).offsetTop
+        ) 
+    }
+
     const handleScroll = (e) => {
         const scroll = window.scrollY;
         
-        if (scroll >= document.querySelector('.about-header').offsetTop) {
+        if (scroll >= grabElement('.contact')){
+            setPage('contact');
+        } else if (scroll >= grabElement('.projects')){
+            setPage('projects');
+        } else if (scroll >= grabElement('.about')) { 
             setPage('about');
         } else {
-            setPage(null);
+            setPage(null)
         }
-        // Google useState and other hooks and finish logic to toggle navigation
     };
 
     useEffect(() => {

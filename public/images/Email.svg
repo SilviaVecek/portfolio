@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="114px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Email</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+        <filter x="-7.2%" y="-7.2%" width="118.5%" height="118.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="3.75" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contact" transform="translate(-695.000000, -787.000000)">
+            <g id="Email/Phone" transform="translate(385.000000, 698.000000)">
+                <g id="Email" transform="translate(315.000000, 94.000000)">
+                    <g id="Oval-13-Copy">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#FFFFFF" stroke-width="7.5" fill="#54B9D3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="iconfinder_mail_115714" transform="translate(23.308271, 33.082707)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M47.3684211,0 L6.76691729,0 C3.02988722,0 0,3.01553885 0,6.7311135 L0,28.6072324 C0,32.3244898 3.02988722,35.3383459 6.76691729,35.3383459 L47.3684211,35.3383459 C51.1054511,35.3383459 54.1353383,32.3244898 54.1353383,28.6072324 L54.1353383,6.7311135 C54.1353383,3.01553885 51.1054511,0 47.3684211,0 Z M3.38345865,8.83458647 L15.2238722,17.6691729 L3.38345865,26.5037594 L3.38345865,8.83458647 Z M50.7518797,28.6072324 C50.7518797,30.4650197 49.2327068,31.9727891 47.3684211,31.9727891 L6.76691729,31.9727891 C4.90093985,31.9727891 3.38345865,30.4650197 3.38345865,28.6072324 L16.6330827,18.7209094 L24.0225564,24.2353741 C24.9242481,24.9051199 25.9951128,25.2450412 27.0676692,25.2450412 C28.1385338,25.2450412 29.2093985,24.9068027 30.1110902,24.2353741 L37.5022556,18.7209094 L50.7518797,28.6072324 Z M50.7518797,26.5037594 L38.9097744,17.6691729 L50.7518797,8.83458647 L50.7518797,26.5037594 Z M29.0960526,22.8891515 C28.5056391,23.3300394 27.8052632,23.5622628 27.0676692,23.5622628 C26.3300752,23.5622628 25.6280075,23.3283566 25.037594,22.8891515 L18.0422932,17.6691729 L16.6330827,16.6174364 L3.38345865,6.73279628 L3.38345865,6.7311135 C3.38345865,4.87500895 4.90093985,3.36555675 6.76691729,3.36555675 L47.3684211,3.36555675 C49.2327068,3.36555675 50.7518797,4.87500895 50.7518797,6.7311135 L29.0960526,22.8891515 Z" id="mail"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

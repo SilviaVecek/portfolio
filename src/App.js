@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Header from './components/Header';
+import Home from './components/Home';
+import Silvitko from './components/Silvitko';
 
 class App extends Component {
     render() {
@@ -9,23 +11,9 @@ class App extends Component {
 
                 <Header />
 
-                <div className="graphics">
-                    <img className="sky" src="/images/Sky.svg" />
-                    <h1 className="greetings">
-                        Hi, I'm <span className="my-name">Silvia Feng</span><br /><span className="front-end">I'm a Front End Developer</span>
-                    </h1>
-                    <div className="flying">
-                        <div className="seagull"></div>
-                    </div>
-                    <div className="skyline"></div>
-                    {/* <img className="skyline" src="/images/Skyline.svg" /> */}
-                    <div className="ocean"></div>
-                    <footer className="footer">
-                        <div className="moving">
-                            <div className="paddling"></div>
-                        </div>
-                    </footer>
-                </div>
+                <Home />
+
+                <Silvitko />
 
                 <div className="content">
                     <div className="about" id="about"></div>
