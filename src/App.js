@@ -20,7 +20,7 @@ class App extends Component {
                     <div className="about" id="about"></div>
                     <div className="about-header">
                         <img className="profile_pic" src="/images/Display_Pic.svg" />
-                        <img className="skyline_about" src="/images/Skyline_About2.svg" />
+                        <img className="skyline_about" src="/images/Skyline_About.svg" />
                     </div>
                     <div className="content-about">
                         <h1 className="about-text">I’m a Front End Developer located in Sydney. I love to <span className="about-code">code</span>, am passionate about<span className="about-design"> UI/UX design</span> and creating an intuitive and aesthically pleasing interface</h1>

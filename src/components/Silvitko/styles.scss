@@ -8,28 +8,29 @@
     position: relative;
     float: right;
   }
-  .paddling {
-    animation: paddling 2s steps(1, end) infinite;
-    height: 126px;
-    width: 128px;
-    background-size: 100% 100%; /*resize when in mobile/tablet to make smaller*/
-    background-repeat: no-repeat;
-  }
+.paddling {
+  animation: paddling 2s steps(1, end) infinite;
+  height: 110px;
+  width: 110px;
+  background-size: 100% 100%; /*resize when in mobile/tablet to make smaller*/
+  background-repeat: no-repeat;
+  margin-top: -10px;
+}
 
 
-  @keyframes moving {
-    0% {right:0; top: 1vw;}
-    25% {right:25vw; top: 3vw;}
-    50% {right:50vw; top: 5vw;}
-    75% {right:75vw; top: 4vw;}
-    100% {right:100vw; top: 2vw;}
-  }
+  // @keyframes moving {
+  //   0% {right:0; top: 1vw;}
+  //   25% {right:25vw; top: 3vw;}
+  //   50% {right:50vw; top: 5vw;}
+  //   75% {right:75vw; top: 4vw;}
+  //   100% {right:100vw; top: 2vw;}
+  // }
   
 
-  @keyframes paddling {
-    0% {background-image: url("/images/Paddle_Left_C.svg");}
-    25% {background-image: url("/images/Paddle_Left.svg");}
-    50% {background-image: url("/images/Paddle_Right_C.svg");}
-    75% {background-image: url("/images/Paddle_Right.svg");}
-    100% {background-image: url("/images/Paddle_Right.svg");}
-  }
+  // @keyframes paddling {
+  //   0% {background-image: url("/images/Paddle_Left_C.svg");}
+  //   25% {background-image: url("/images/Paddle_Left.svg");}
+  //   50% {background-image: url("/images/Paddle_Right_C.svg");}
+  //   75% {background-image: url("/images/Paddle_Right.svg");}
+  //   100% {background-image: url("/images/Paddle_Right.svg");}
+  // }

@@ -7,17 +7,12 @@
   }
   
   .home__sky {
-    width: 70%;
-    min-width: 40rem;
+    height: 27vh;
+    width: auto;
     z-index: -10;
     position: absolute;
     animation: sun 40s linear infinite;
   }
-  
-  /* @keyframes sun {
-    0%   { transform: translate(-100%, 0); }
-    100% { transform: translate(100%, 0); }
-  } */
   
   
   .home__intro {
@@ -50,8 +45,8 @@
 
   .home__seagull-flapping {
     animation: seagull-flapping 1s steps(1, end) infinite;
-    height: 54px;
-    width: 86px;
+    height: 35px;
+    width: 60px;
     z-index: -5;
     right: 0;
     background-repeat: no-repeat;
@@ -61,7 +56,7 @@
   .home__skyline {
     width: 100%;
     min-width: 1150px;
-    min-height: 48vh;
+    min-height: 40vh;
     background-image: url("/images/Skyline.svg");
     background-repeat: round space; 
     animation: skyline 1000s linear infinite; 
@@ -74,22 +69,27 @@
     background: #54B9D3;
     position: absolute;
   }
-  
-  @keyframes seagull-flapping {
-    0% {background-image: url("/images/SeagullWingUp.svg");}
-    33% {background-image: url("/images/SeagullWingDown.svg");}
-    66% {background-image: url("/images/SeagullWingUp.svg");}
-    100% {background-image: url("/images/SeagullWingDown.svg");} 
-  
-  }
 
-  @keyframes moving {
-    0% {right:0; top: 1vw;}
-    25% {right:25vw; top: 3vw;}
-    50% {right:50vw; top: 5vw;}
-    75% {right:75vw; top: 4vw;}
-    100% {right:100vw; top: 2vw;}
-  }
+  // @keyframes sun {
+  //   0%   { transform: translate(-100%, 0); }
+  //   100% { transform: translate(100%, 0); }
+  // } 
+  
+  // @keyframes seagull-flapping {
+  //   0% {background-image: url("/images/SeagullWingUp.svg");}
+  //   33% {background-image: url("/images/SeagullWingDown.svg");}
+  //   66% {background-image: url("/images/SeagullWingUp.svg");}
+  //   100% {background-image: url("/images/SeagullWingDown.svg");} 
+  
+  // }
+
+  // @keyframes moving {
+  //   0% {right:0; top: 1vw;}
+  //   25% {right:25vw; top: 3vw;}
+  //   50% {right:50vw; top: 5vw;}
+  //   75% {right:75vw; top: 4vw;}
+  //   100% {right:100vw; top: 2vw;}
+  // }
   
 
   //   @keyframes skyline {
