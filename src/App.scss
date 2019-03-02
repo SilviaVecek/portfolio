@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant');
+
+$font-family-base: Assistant;
+
+body {
+  margin: 0;
+  background: #ECF7FC;
+  font-family: $font-family-base;
+}
+
+
+.graphics {
+  padding-top: 9vh;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.sky {
+  width: 70%;
+  min-width: 40rem;
+  z-index: -10;
+  position: absolute;
+  animation: sun 40s linear infinite;
+}
+
+/* @keyframes sun {
+  0%   { transform: translate(-100%, 0); }
+  100% { transform: translate(100%, 0); }
+} */
+
+
+.greetings {
+  top: 25vh;
+  text-align: center;
+  line-height: 200%;
+  font-size: 26px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.my-name {
+  color: #F5A623;
+  text-shadow: 1px 1px 1px #BDBDBD;
+}
+
+.front-end {
+  color: #4D4D4D;
+}
+
+
+.flying {
+  animation: moving 30s linear infinite;
+  position: relative;
+  float: right;
+  margin-top: 20vh;
+}
+.seagull {
+  animation: seagull 1s steps(1, end) infinite;
+  height: 54px;
+  width: 86px;
+  z-index: -5;
+  right: 0;
+}
+
+
+/* @keyframes seagull {
+  0% {background-image: url("/images/SeagullWingUp.svg");}
+  33% {background-image: url("/images/SeagullWingDown.svg");}
+  66% {background-image: url("/images/SeagullWingUp.svg");}
+  100% {background-image: url("/images/SeagullWingDown.svg");} 
+
+} */
+
+.skyline {
+  width: 100%;
+  min-width: 1150px;
+  min-height: 48vh;
+  background-image: url("/images/Skyline.svg");
+  background-repeat: round space; 
+  animation: skyline 1000s linear infinite; 
+  margin-top: 25vh;
+}
+
+/* @keyframes skyline {
+  from { background-position: -10000% 0%; }
+  to { background-position: 10000% 0%; }
+} */
+
+.ocean {
+  width: 100%;
+  min-height: 50vw;
+  background: #54B9D3;
+  position: absolute;
+}
+
+.moving {
+  animation: moving 25s linear infinite;
+  position: relative;
+  float: right;
+}
+.paddling {
+  animation: paddling 2s steps(1, end) infinite;
+  height: 126px;
+  width: 128px;
+  background-size: 100% 100%; /*resize when in mobile/tablet to make smaller*/
+  background-repeat: no-repeat;
+}
+
+@keyframes moving {
+  0% {right:0; top: 1vw;}
+  25% {right:25vw; top: 2vw;}
+  50% {right:50vw; top: 1vw;}
+  75% {right:75vw; top: 2vw;}
+  100% {right:100vw; top: 1vw;}
+}
+
+@keyframes paddling {
+  0% {background-image: url("/images/Paddle_Left_C.svg");}
+  25% {background-image: url("/images/Paddle_Left.svg");}
+  50% {background-image: url("/images/Paddle_Right_C.svg");}
+  75% {background-image: url("/images/Paddle_Right.svg");}
+  100% {background-image: url("/images/Paddle_Right.svg");}
+}
+
+
+.content {
+  height: 100vh;
+}
+
+.about-header {
+  display: flex;
+  justify-content: space-between;
+}
+.about {
+  width: 100%;
+  height: 25vh;
+  background-color:  #54B9D3;
+  position: absolute;
+  z-index: -99;
+}
+
+.skyline_about {
+  margin-top: 3vh;
+  max-height: 22vh;
+  float: right;
+  z-index: 10;
+}
+
+.profile_pic {
+  max-height: 30vh;
+  width: auto;
+  margin-top: calc(10vh + 20px);
+  margin-left: 5vw;
+}
+
+.content-about {
+  margin-top: -10vh;
+}
+
+.about-text {
+  text-align: center;
+  max-width: 40vw;
+  font-size: 20px;
+  margin: 0 0 5vh 35vw;
+}
+
+.about-code {
+  color: #53B8D2;
+}
+
+.about-design {
+  color: #FFBD52;
+}
+
+.about-rectangle {
+  max-width: 50vw;
+  height: 40vh;
+  background: white;
+  border-radius: 10px;
+  margin-left: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0px 5px 5px 0px #E9F0F3;
+}
+
+.flying_about {
+  margin-top: -10vh;
+  z-index: -10;
+  animation: moving 20s linear infinite;
+}
+
+.content-details {
+  margin: 5vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job {
+  color: #F5A623;
+  text-shadow: 1px 1px 1px #BDBDBD;
+}
+
+.skills {
+  color: #53B8D2;
+}
+
+.skills_list {
+  list-style-image: url("/images/tick.svg");
+  margin: 0;
+}
+
+.divider {
+  height: 40vh;
+  background: rgba(83, 184, 210, 0.26);
+  width: 0.5vw;
+}
+
+.icon {
+  height: 81px;
+}
+
+.projects {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.projects-displayed {
+  height: 20vw;
+  width: 20vw;
+  background: gray;
+  border-radius: 50%;
+  border: 1vw solid white;
+}
+
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: -5vh;
+}
+
+.contact-options {
+  display: flex;
+
+}
+
+.question {
+  color: #54B9D3;
+}
+
+.contact-alternative {
+  color: #FFBD52;
+  margin: 6vh 0 3vh 0;
+}
+
+.skyline_contact {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+}
+
+::placeholder {
+  color: rgba(255,189,82,0.34);
+  font-family: $font-family-base;
+  font-size: 16px;
+}
+
+input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.input {
+  margin: 0.5vh;
+}
+
+.message-box {
+  height: 20vh;
+}
+
+.submit {
+  width: 100px;
+  border: 0.3rem solid white;
+  background: #54B9D3;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: $font-family-base;
+  padding: 0.2rem;
+  align-self: flex-end;   
+}
+
+.contact-choices {
+  color: #54B9D3;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.contact-details {
+  text-shadow: 2px 2px 1px white;
+  margin-top: 1vh;
+}
+
+.contact-choice-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -2vw;
+}
+
+.contact-icon {
+  max-width: 100px;
+  width: 8vw;
+  min-width: 50px;
+  height: auto;
+}
+
+.phone-box {
+  margin-right: 3vw;
+}
+
+.contact-options{
+  width: 50%;
+  justify-content: space-evenly;
+}

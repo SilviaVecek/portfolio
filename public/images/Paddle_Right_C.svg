@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="129px" viewBox="0 0 130 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Silvitko Paddle Right Centre</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-4.4%" y="-2.8%" width="108.9%" height="108.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Spare-animation-parts" transform="translate(-245.000000, -159.000000)">
+            <g id="Silvitko-Paddle-Right-Centre" filter="url(#filter-1)" transform="translate(248.000000, 160.000000)">
+                <circle id="Oval-8" fill="#FFDAB4" cx="46" cy="51" r="4"></circle>
+                <g id="oar" transform="translate(38.000000, 4.000000)" fill="#A98A57">
+                    <rect id="Rectangle-30" x="5" y="3" width="2" height="97"></rect>
+                    <polygon id="Triangle-2" transform="translate(6.500000, 3.000000) rotate(-180.000000) translate(-6.500000, -3.000000) " points="6.5 0 11 6 2 6"></polygon>
+                    <polygon id="Triangle-2-Copy" transform="translate(6.000000, 100.500000) scale(1, -1) rotate(-180.000000) translate(-6.000000, -100.500000) " points="6 96 12 105 0 105"></polygon>
+                    <path d="M0,105 L12,105 L12,116.6 C12,117.925483 10.9254834,119 9.6,119 L2.4,119 C1.0745166,119 -2.8176431e-16,117.925483 -4.4408921e-16,116.6 L0,105 Z" id="Rectangle-31"></path>
+                </g>
+                <g id="Kayak" transform="translate(0.000000, 61.000000)">
+                    <path d="M62.5,27.9551393 C79.870591,27.9551393 97.3350022,28.551585 108.519356,25.3948339 C119.205824,22.3786094 123,13.5998547 123,10.952225 C123,5.53361199 95.7927991,5 61.82489,5 C27.8569809,5 2,5.53361199 2,10.952225 C2,13.9513652 4.11244464,22.1933033 17.4054154,25.3948339 C28.1291494,27.9775795 47.3329392,27.9551393 62.5,27.9551393 Z" id="Oval-6-Copy-2" fill="#AA2D2D"></path>
+                    <path d="M62,24.9512384 C79.8012669,24.9512384 97.69868,25.599549 109.160332,22.1682977 C120.111754,18.8897928 124,9.34766816 124,6.46980982 C124,0.580013033 96.1182404,0 61.3081517,0 C26.4980631,0 0,0.580013033 0,6.46980982 C0,9.72974482 2.1648193,18.6883732 15.7873678,22.1682977 C26.7769795,24.9756299 46.4568963,24.9512384 62,24.9512384 Z" id="Oval-6-Copy-3" fill="#D23030"></path>
+                    <ellipse id="Oval-6-Copy" fill="#6A6A6A" cx="62" cy="10.5" rx="27" ry="8.5"></ellipse>
+                </g>
+                <rect id="Rectangle-28-Copy-4" fill="#FFDAB4" transform="translate(56.500000, 44.000000) rotate(57.000000) translate(-56.500000, -44.000000) " x="54" y="34" width="5" height="20"></rect>
+                <path d="M63,36.2963641 L64.2642744,35.4546365 C65.5907994,34.5714637 67.3150177,34.55997 68.6531989,35.4253797 L70,36.2963641 L70,43 L63,43 L63,36.2963641 Z" id="Rectangle-28-Copy-3" fill="#FFFFFF" transform="translate(66.500000, 39.000000) rotate(40.000000) translate(-66.500000, -39.000000) "></path>
+                <rect id="Rectangle-28" fill="#FFDAB4" x="66" y="29" width="6" height="8"></rect>
+                <path d="M72.2769277,36.6813253 L76,42 L62,42 L65.7230723,36.6813253 C66.9899303,34.8715281 69.4840522,34.4313889 71.2938494,35.698247 C71.6764147,35.9660427 72.009132,36.29876 72.2769277,36.6813253 Z" id="Triangle" fill="#FFFFFF"></path>
+                <circle id="Oval-6" fill="#FFDAB4" cx="67.5" cy="19.5" r="14.5"></circle>
+                <path d="M57.314511,29.8364434 C56.4751625,29.0479414 55.7355606,27.8671794 55.0630963,27 L60.2217595,27 C59.401269,28.0624576 58.4218048,29.0173154 57.314511,29.8364434 Z" id="Combined-Shape" fill="#606060"></path>
+                <path d="M55.1203191,27 L59.6274459,27 L58.8967741,28 L55.804897,28 L55.1203191,27 Z" id="Rectangle-27" fill="#F1F1F1"></path>
+                <path d="" id="Combined-Shape-Copy-7" fill="#E3E3E3"></path>
+                <path d="M58.5,20.9650471 C59.8807119,20.9650471 61,22.462349 61,21.8550352 C61,21.2477214 59.8807119,20 58.5,20 C57.1192881,20 56,21.2477214 56,21.8550352 C56,22.462349 57.1192881,20.9650471 58.5,20.9650471 Z" id="FACE-Copy-2" fill="#71604D" transform="translate(58.500000, 21.000000) rotate(6.000000) translate(-58.500000, -21.000000) "></path>
+                <path d="M58.0972719,18.0098497 C59.4493222,18.0098497 61,19.3366774 61,18.9184741 C61,18.5002708 59.4493222,17 58.0972719,17 C56.7452215,17 55,17.8057311 55,18.2239344 C55,18.6421377 56.7452215,18.0098497 58.0972719,18.0098497 Z" id="FACE-Copy-3" fill="#71604D"></path>
+                <path d="M51,16 C51,7.163444 58.163444,0 67,0 C75.836556,0 83,7.163444 83,16 L51,16 Z" id="Combined-Shape" fill="#71604D"></path>
+                <rect id="Rectangle-25" fill="#71604D" x="72" y="15" width="11" height="27"></rect>
+                <rect id="Rectangle-29" fill="#FFFFFF" x="62" y="42" width="14" height="22"></rect>
+                <rect id="Rectangle-28-Copy-2" fill="#FFDAB4" transform="translate(56.500000, 36.000000) rotate(115.000000) translate(-56.500000, -36.000000) " x="54" y="25" width="5" height="22"></rect>
+                <path d="M62,37.2963641 L63.2642744,36.4546365 C64.5907994,35.5714637 66.3150177,35.55997 67.6531989,36.4253797 L69,37.2963641 L69,44 L62,44 L62,37.2963641 Z" id="Rectangle-28-Copy" fill="#FFFFFF" transform="translate(65.500000, 40.000000) rotate(110.000000) translate(-65.500000, -40.000000) "></path>
+                <path d="M62,63 L77,63 L77,70.6 C77,74.1346224 74.1346224,77 70.6,77 L62,77 L62,63 Z" id="Rectangle-32" fill="#B9CCD4"></path>
+                <path d="M51,71 L62,71 L62,77 L51,77 C49.3431458,77 48,75.6568542 48,74 L48,74 C48,72.3431458 49.3431458,71 51,71 Z" id="Rectangle-33-Copy" fill="#FFDAB4"></path>
+                <path d="M51,67 L62,67 L62,73 L51,73 C49.3431458,73 48,71.6568542 48,70 L48,70 C48,68.3431458 49.3431458,67 51,67 Z" id="Rectangle-33-Copy-2" fill="#FFDAB4"></path>
+                <rect id="Rectangle-33" fill="#B9CCD4" x="55" y="67" width="7" height="10"></rect>
+                <circle id="Oval-8-Copy" fill="#FFDAB4" cx="44" cy="30" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
