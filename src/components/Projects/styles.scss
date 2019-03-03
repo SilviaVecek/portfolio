@@ -1,0 +1,15 @@
+.projects {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .projects-displayed {
+    height: 20vw;
+    width: 20vw;
+    background: gray;
+    border-radius: 50%;
+    border: 1vw solid white;
+  }

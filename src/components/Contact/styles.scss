@@ -1,0 +1,103 @@
+$font-family-base: Assistant;
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5vh;
+  }
+  
+  .contact-options {
+    display: flex;
+  
+  }
+  
+  .question {
+    color: #54B9D3;
+  }
+  
+  .contact-alternative {
+    color: #FFBD52;
+    margin: 6vh 0 3vh 0;
+  }
+  
+  .skyline_contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+  }
+  
+  ::placeholder {
+    color: rgba(255,189,82,0.34);
+    font-family: $font-family-base;
+    font-size: 16px;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .input {
+    margin: 0.5vh;
+  }
+  
+  .message-box {
+    height: 20vh;
+  }
+  
+  .submit {
+    width: 100px;
+    border: 0.3rem solid white;
+    background: #54B9D3;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    font-family: $font-family-base;
+    padding: 0.2rem;
+    align-self: flex-end;   
+  }
+  
+  .contact-choices {
+    color: #54B9D3;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  
+  .contact-details {
+    text-shadow: 2px 2px 1px white;
+    margin-top: 1vh;
+  }
+  
+  .contact-choice-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -2vw;
+  }
+  
+  .contact-icon {
+    max-width: 100px;
+    width: 8vw;
+    min-width: 50px;
+    height: auto;
+  }
+  
+  .phone-box {
+    margin-right: 3vw;
+  }
+  
+  .contact-options{
+    width: 50%;
+    justify-content: space-evenly;
+  }
