@@ -1,14 +1,15 @@
-.footer {
+.silvitko {
     bottom: 0;
     right: 0;
+    position: absolute;
 }
 
-.moving {
-    animation: moving 25s linear infinite;
+.silvitko__sailing {
+    animation: sailing 25s linear infinite;
     position: relative;
     float: right;
   }
-.paddling {
+.silvitko__paddling {
   animation: paddling 2s steps(1, end) infinite;
   height: 110px;
   width: 110px;
@@ -18,19 +19,19 @@
 }
 
 
-  // @keyframes moving {
-  //   0% {right:0; top: 1vw;}
-  //   25% {right:25vw; top: 3vw;}
-  //   50% {right:50vw; top: 5vw;}
-  //   75% {right:75vw; top: 4vw;}
-  //   100% {right:100vw; top: 2vw;}
-  // }
+  @keyframes sailing {
+    0% {right:0; bottom: 1vh;}
+    25% {right:25vw; bottom: 3vh;}
+    50% {right:50vw; bottom: 2vh;}
+    75% {right:75vw; bottom: 1vh;}
+    100% {right:100vw; bottom: 3vh;}
+  }
   
 
-  // @keyframes paddling {
-  //   0% {background-image: url("/images/Paddle_Left_C.svg");}
-  //   25% {background-image: url("/images/Paddle_Left.svg");}
-  //   50% {background-image: url("/images/Paddle_Right_C.svg");}
-  //   75% {background-image: url("/images/Paddle_Right.svg");}
-  //   100% {background-image: url("/images/Paddle_Right.svg");}
-  // }
+  @keyframes paddling {
+    0% {background-image: url("/images/Paddle_Left_C.svg");}
+    25% {background-image: url("/images/Paddle_Left.svg");}
+    50% {background-image: url("/images/Paddle_Right_C.svg");}
+    75% {background-image: url("/images/Paddle_Right.svg");}
+    100% {background-image: url("/images/Paddle_Right.svg");}
+  }

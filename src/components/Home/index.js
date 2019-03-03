@@ -11,9 +11,9 @@ const Home = ({ children }) => {
             <div className="home__seagull-flying">
                 <div className="home__seagull-flapping"></div>
             </div>
-            <div className="home__skyline">
-                {children}
-            </div>
+            <img className="home__skyline" src="/images/Skyline.svg"/>
+            <img className="home__waves" src="/images/Waves.svg" />
+            {children}
         </div>
     );
 }
