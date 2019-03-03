@@ -64,7 +64,12 @@
 
   .home__waves {
     width: 100%;
-    height: 100%;
+    height: 6vh;
+    background-image: url("/images/Waves.svg");
+    background-repeat: space repeat-x ;
+    bottom: 4%;
+    position: absolute;
+    animation: waves 1s linear infinite;
   }
 
 
@@ -73,13 +78,13 @@
   //   100% { transform: translate(100%, 0); }
   // } 
   
-  @keyframes seagull-flapping {
-    0% {background-image: url("/images/SeagullWingUp.svg");}
-    33% {background-image: url("/images/SeagullWingDown.svg");}
-    66% {background-image: url("/images/SeagullWingUp.svg");}
-    100% {background-image: url("/images/SeagullWingDown.svg");} 
+  // @keyframes seagull-flapping {
+  //   0% {background-image: url("/images/SeagullWingUp.svg");}
+  //   33% {background-image: url("/images/SeagullWingDown.svg");}
+  //   66% {background-image: url("/images/SeagullWingUp.svg");}
+  //   100% {background-image: url("/images/SeagullWingDown.svg");} 
   
-  }
+  // }
 
   // @keyframes seagull-flying {
   //   from {right:0}
@@ -90,3 +95,12 @@
   //   from { background-position: 10000% 0%; }
   //   to { background-position: -10000% 0%; }
   // }
+
+
+  // @keyframes waves {
+  //   0% {bottom: 5%}
+  //   50% {bottom: 6%}
+  //   100% {bottom: 5%}
+  // }
+
+  // add media query for silvitko sailing and waves when screen becomes mobile

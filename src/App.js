@@ -15,17 +15,10 @@ class App extends Component {
                 <Home>
                     <Silvitko />
                 </Home>
-                <About />
+                <About>
+                    <Silvitko />
+                </About>
 
-
-                <div className="content">
-                    <div className="flying flying_about">
-                        <div className="seagull"></div>
-                    </div>
-                    <div className="moving">
-                        <div className="paddling"></div>
-                    </div>
-                </div>
 
 
                 <div className="projects" id="projects">

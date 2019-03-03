@@ -19,19 +19,19 @@
 }
 
 
-  @keyframes sailing {
-    0% {right:0; bottom: 1vh;}
-    25% {right:25vw; bottom: 3vh;}
-    50% {right:50vw; bottom: 2vh;}
-    75% {right:75vw; bottom: 1vh;}
-    100% {right:100vw; bottom: 3vh;}
-  }
+  // @keyframes sailing {
+  //   0% {right:0; bottom: 1vh;}
+  //   25% {right:25vw; bottom: 3vh;}
+  //   50% {right:50vw; bottom: 2vh;}
+  //   75% {right:75vw; bottom: 1vh;}
+  //   100% {right:100vw; bottom: 3vh;}
+  // }
   
 
-  @keyframes paddling {
-    0% {background-image: url("/images/Paddle_Left_C.svg");}
-    25% {background-image: url("/images/Paddle_Left.svg");}
-    50% {background-image: url("/images/Paddle_Right_C.svg");}
-    75% {background-image: url("/images/Paddle_Right.svg");}
-    100% {background-image: url("/images/Paddle_Right.svg");}
-  }
+  // @keyframes paddling {
+  //   0% {background-image: url("/images/Paddle_Left_C.svg");}
+  //   25% {background-image: url("/images/Paddle_Left.svg");}
+  //   50% {background-image: url("/images/Paddle_Right_C.svg");}
+  //   75% {background-image: url("/images/Paddle_Right.svg");}
+  //   100% {background-image: url("/images/Paddle_Right.svg");}
+  // }
