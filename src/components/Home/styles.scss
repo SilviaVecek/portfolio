@@ -1,8 +1,8 @@
 .home {
     padding-top: 9vh;
+    height: 100vh;
     overflow: hidden;
     position: relative;
-    height: 100vh;
     box-sizing: border-box;
   }
   
@@ -54,7 +54,7 @@
   
   .home__skyline {
     width: 100%;
-    min-width: 1100px;
+    min-width: 750px;
     min-height: 70vh;
     // background-image: url("/images/Skyline.svg");
     // background-repeat: round space; 
@@ -64,13 +64,15 @@
 
   .home__waves {
     width: 100%;
-    height: 6vh;
+    height: 224px;
+    padding: 20px;
+    bottom: 0;
     background-image: url("/images/Waves.svg");
-    background-repeat: space repeat-x ;
-    bottom: 4%;
+    background-repeat: repeat;
     position: absolute;
     animation: waves 1s linear infinite;
   }
+
 
 
   // @keyframes sun {
@@ -78,13 +80,13 @@
   //   100% { transform: translate(100%, 0); }
   // } 
   
-  // @keyframes seagull-flapping {
-  //   0% {background-image: url("/images/SeagullWingUp.svg");}
-  //   33% {background-image: url("/images/SeagullWingDown.svg");}
-  //   66% {background-image: url("/images/SeagullWingUp.svg");}
-  //   100% {background-image: url("/images/SeagullWingDown.svg");} 
+  @keyframes seagull-flapping {
+    0% {background-image: url("/images/SeagullWingUp.svg");}
+    33% {background-image: url("/images/SeagullWingDown.svg");}
+    66% {background-image: url("/images/SeagullWingUp.svg");}
+    100% {background-image: url("/images/SeagullWingDown.svg");} 
   
-  // }
+  }
 
   // @keyframes seagull-flying {
   //   from {right:0}
@@ -98,9 +100,34 @@
 
 
   // @keyframes waves {
-  //   0% {bottom: 5%}
-  //   50% {bottom: 6%}
-  //   100% {bottom: 5%}
+  //   0% {bottom: 2%}
+  //   50% {bottom: 4%}
+  //   100% {bottom: 2%}
   // }
 
-  // add media query for silvitko sailing and waves when screen becomes mobile
+  @media only screen and (min-width: 1100px) { 
+    .home__waves {
+      height: 170px;
+    }
+  }
+
+  @media only screen and (min-width: 1400px) { 
+    .home__waves {
+      height: 140px;
+      padding: 0;
+    }
+    .home__seagull-flapping {
+      height: 45px;
+      width: 72px;
+    }
+  }
+
+  @media only screen and (min-width: 1600px) { 
+    .home__waves {
+      height: 90px;
+      padding: 0;
+      background-size: 30%;
+
+    }
+  }
+

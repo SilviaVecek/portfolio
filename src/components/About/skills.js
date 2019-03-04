@@ -7,9 +7,9 @@ const SkillSet = ({ image, job, stack, item1, item2, item3 }) => (
         <h2 className="job">{job}</h2>
         <h3 className="stack">{stack}</h3>
         <ul className="skills-list">
-            <li>{item1}</li>
-            <li>{item2}</li>
-            <li>{item3}</li>
+            <li><span>{item1}</span></li>
+            <li><span>{item2}</span></li>
+            <li><span>{item3}</span></li>
         </ul>
     </div>
 )
