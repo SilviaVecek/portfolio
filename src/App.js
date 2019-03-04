@@ -15,7 +15,7 @@ class App extends Component {
                 <Header />
 
                 <Home>
-                    <Silvitko />
+                    <Silvitko className="silvitko--bottom"/>
                 </Home>
                 <About>
                     <Silvitko />

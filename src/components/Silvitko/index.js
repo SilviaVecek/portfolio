@@ -1,10 +1,11 @@
 import React from 'react';
+import classnames from 'classnames';
 import './styles.scss';
 
 
-const Silvitko = () => {
+const Silvitko = ({className}) => {
     return (
-    <footer className="silvitko">
+    <footer className={classnames("silvitko", className)}>
         <div className="seagull-flying">
             <div className="seagull-flapping"></div>
         </div>
