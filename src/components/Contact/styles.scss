@@ -3,30 +3,31 @@ $font-family-base: Assistant;
 .contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
     justify-content: center;
-    height: 100vh;
-    position: relative
+    position: relative;
   }
   
   .contact-form {
     display: flex;
+    align-self: center;
     flex-direction: column;
-    margin-top: -5vh;
+    width: 80%;
   }
   
   .contact-options {
     display: flex;
-  
+    align-self: center;
   }
   
   .question {
     color: #54B9D3;
+    text-align: center;
   }
   
   .contact-alternative {
     color: #FFBD52;
-    margin: 6vh 0 3vh 0;
+    text-align: center;
   }
   
   .skyline_contact {
@@ -49,11 +50,11 @@ $font-family-base: Assistant;
   }
   
   .input {
-    margin: 0.5vh;
+    margin: 10px 0;
   }
   
   .message-box {
-    height: 20vh;
+    height: 200px;
   }
   
   .submit {
@@ -70,34 +71,39 @@ $font-family-base: Assistant;
   
   .contact-choices {
     color: #54B9D3;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 0;
   }
   
   .contact-details {
     text-shadow: 2px 2px 1px white;
-    margin-top: 1vh;
+    margin-top: 1em;
   }
   
   .contact-choice-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: -2vw;
   }
   
   .contact-icon {
-    max-width: 100px;
-    width: 8vw;
-    min-width: 50px;
+    max-width: 80px;
+    width: 30%;
     height: auto;
+    margin-right: 5px;
   }
   
   .phone-box {
-    margin-right: 3vw;
+    margin-right: 20px;
   }
   
   .contact-options{
     width: 50%;
     justify-content: space-evenly;
+  }
+
+  @media only screen and (min-width: 850px) {
+    .contact-form {
+      width: 50%;
+    }
   }

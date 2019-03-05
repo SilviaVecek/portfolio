@@ -52,6 +52,7 @@ $blue: #54B9D3;
     font-size: 18px;
     text-transform: uppercase;
     padding: 1rem;
+    transition: 0.5s ease-in-out;
 
     &:hover, &:focus {
         color: $blue;

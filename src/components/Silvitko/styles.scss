@@ -1,7 +1,10 @@
-.silvitko--bottom {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.silvitko {
+  height: 120px;
+}
+@media only screen and (min-width: 1015px) {
+  .silvitko {
+
+  }
 }
 
 .silvitko__paddling {

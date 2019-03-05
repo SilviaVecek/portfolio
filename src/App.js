@@ -18,10 +18,10 @@ class App extends Component {
                     <Silvitko className="silvitko--bottom"/>
                 </Home>
                 <About>
-                    <Silvitko />
+                    <Silvitko className="silvitko--about"/>
                 </About>
                 <Projects>
-                    <Silvitko />
+                    {/* <Silvitko /> */}
                 </Projects>
                 <Contact />
             </div> 
