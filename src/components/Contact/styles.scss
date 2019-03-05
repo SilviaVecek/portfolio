@@ -6,6 +6,7 @@ $font-family-base: Assistant;
     align-self: center;
     justify-content: center;
     position: relative;
+    height: 100vh;
   }
   
   .contact-form {
@@ -26,6 +27,7 @@ $font-family-base: Assistant;
   }
   
   .contact-alternative {
+    margin-top: 30px;
     color: #FFBD52;
     text-align: center;
   }
@@ -34,7 +36,7 @@ $font-family-base: Assistant;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 80%;
+    width: 100%;
   }
   
   ::placeholder {
@@ -102,8 +104,35 @@ $font-family-base: Assistant;
     justify-content: space-evenly;
   }
 
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 700px) {
+    .contact-form {
+      width: 60%;
+    }
+    .skyline_contact {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
     .contact-form {
       width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .contact-form {
+      width: 40%;
+    }
+    .contact-options {
+      width: 40%;
+    }
+    .skyline_contact {
+      width: 70%;
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    .contact-options {
+      width: 30%;
     }
   }

@@ -2,7 +2,7 @@ $orange: #FFBD52;
 $blue: #54B9D3;
 
 .projects {
-  padding-top: 200px;
+  padding-top: 100px;
   position: relative;
 }
 
@@ -12,6 +12,7 @@ $blue: #54B9D3;
   max-width: 80%;
   font-size: 20px;
   margin: 0 auto;
+  font-size: 24px;
 }
 
 .projects-items {
@@ -29,7 +30,7 @@ $blue: #54B9D3;
   background: $orange;
   border-radius: 20%;
   border: 5px solid white;
-  margin: 20px 0;
+  margin: 10px 0;
   &:hover &:focus{
     background: $blue;
   }
@@ -39,13 +40,18 @@ $blue: #54B9D3;
   .projects {
     position: relative;
     margin: 0;
-    min-height: 600px;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center; 
   }
   .projects-items {
-    position: absolute;
     flex-direction: row;
     top: 50%;
     bottom: 50%;
+    margin: 80px 0 50px 0;  
   }
   .projects-items__box {
     height: 250px;

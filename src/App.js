@@ -15,13 +15,13 @@ class App extends Component {
                 <Header />
 
                 <Home>
-                    <Silvitko className="silvitko--bottom"/>
+                    <Silvitko className="silvitko--home"/>
                 </Home>
                 <About>
-                    <Silvitko className="silvitko--about"/>
+                    <Silvitko className="silvitko--absolute"/>
                 </About>
                 <Projects>
-                    {/* <Silvitko /> */}
+                    <Silvitko className="silvitko--absolute"/>
                 </Projects>
                 <Contact />
             </div> 

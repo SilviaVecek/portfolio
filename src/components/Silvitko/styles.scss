@@ -2,15 +2,17 @@
   height: 120px;
 }
 @media only screen and (min-width: 1015px) {
-  .silvitko {
-
+  .silvitko--absolute {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 
 .silvitko__paddling {
   animation: paddling 2s steps(1, end) infinite;
-  height: 110px;
-  width: 110px;
+  height: 100px;
+  width: 100px;
   background-size: 100% 100%; /*resize when in mobile/tablet to make smaller*/
   background-repeat: no-repeat;
   margin-top: -10px;
@@ -27,6 +29,8 @@
   animation: sailing 25s linear infinite;
   position: relative;
   float: right;
+  height: 100px;
+  width: 100px;
 }
 // @keyframes sailing {
 //   0% {right:0; bottom: 1vh;}
