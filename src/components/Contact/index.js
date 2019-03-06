@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <div className="contact" id="contact">
         <h2 className="question">Have a question or want to work together?</h2>
-        <form className="contact-form" action="email.php" method="get">
+        <form method="POST" data-netlify="true" name="contact-silvia" className="contact-form">
             <input className="input" type="text" name="name" placeholder="Name" required />
             <input className="input" type="email" name="email" placeholder="Email" required />
             <input className="input message-box" name="message" type="message" placeholder="Message" required />

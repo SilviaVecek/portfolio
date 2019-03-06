@@ -31,8 +31,9 @@ $blue: #54B9D3;
   border-radius: 20%;
   border: 5px solid white;
   margin: 10px 0;
-  &:hover &:focus{
-    background: $blue;
+  transition: all 0.05s ease-in-out;
+  &:hover, &:focus{
+    background: rgba(255, 189, 82, 0.7)
   }
 }
 
