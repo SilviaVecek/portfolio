@@ -1,6 +1,5 @@
 .home {
-    padding-top: 9vh;
-    height: 100vh;
+    padding-top: 10%;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
@@ -9,14 +8,15 @@
   .home__sky {
     width: 70%;
     min-width: 800px;
-    min-height: 27vh;
+    min-height: 27%;
+    max-width: 1000px;
     z-index: -10;
     animation: sun 40s linear infinite;
   }
   
   
   .home__intro {
-    top: 25vh;
+    top: 20%;
     text-align: center;
     line-height: 200%;
     font-size: 26px;
@@ -55,17 +55,21 @@
   .home__skyline {
     width: 100%;
     min-width: 750px;
-    min-height: 70vh;
-    margin-top: 2vh;
+    max-height: 40%;
+    margin-top: 2%;
   }
 
+  .home__ocean {
+    min-height: 277px;
+    z-index: -1;
+  }
   .home__waves {
     width: 100%;
-    height: 224px;
-    padding: 20px;
+    height: 40px;
     bottom: 0;
     background-image: url("/images/Waves.svg");
-    background-repeat: repeat;
+    background-repeat: space repeat-x;
+    background-size: contain;
     position: absolute;
     animation: waves 1s linear infinite;
   }
@@ -97,16 +101,10 @@
     100% {bottom: 2%}
   }
 
-  @media only screen and (min-width: 1100px) { 
-    .home__waves {
-      height: 170px;
-    }
-  }
 
   @media only screen and (min-width: 1400px) { 
-    .home__waves {
-      height: 140px;
-      padding: 0;
+    .home {
+      padding-top: 5%;
     }
     .home__seagull-flapping {
       height: 45px;
@@ -114,12 +112,9 @@
     }
   }
 
-  @media only screen and (min-width: 1600px) { 
-    .home__waves {
-      height: 90px;
-      padding: 0;
-      background-size: 30%;
 
+  @media only screen and (min-width: 1500px) { 
+    .home__waves {
+      max-height: 278px;
     }
   }
-

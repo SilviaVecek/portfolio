@@ -71,6 +71,7 @@ color: #FFBD52;
     max-width: 300px;
 }
 
+
 .skills-icon {
     height: 70px;
 }
@@ -141,20 +142,22 @@ margin: 10px 0;
         margin-top: 50px;
     }
     .skill-set {
-        border-radius: 0;
         height: 320px;
         padding: 0;
     }
+
+    .skill-set--left {
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .skill-set--right{
+        border-radius: 0 10px 10px 0;
+    }
+    
     .skills-icon {
         margin-top: 30px;
     }
 
-    .skills-list__left {
-        border-radius: 10px 0 0 10px;
-    }
-    .skills-list__right {
-      
-    }
     .skills-list {
         padding: 0;
 

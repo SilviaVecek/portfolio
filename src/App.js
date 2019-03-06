@@ -14,7 +14,7 @@ class App extends Component {
 
                 <Header />
                 <Home>
-                    <Silvitko className="silvitko--absolute-home"/>
+                    <Silvitko className="silvitko--absolute-home silvitko-mobile"/>
                 </Home>
                 <About>
                     <Silvitko className="silvitko--absolute"/>
