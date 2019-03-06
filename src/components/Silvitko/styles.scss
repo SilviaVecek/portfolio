@@ -1,6 +1,12 @@
+.silvitko {
+  display: flex;
+  flex-direction: column;
+}
+
 .seagull-flying {
   animation: seagull-flying 6s linear infinite;
-  position: absolute;
+  position: relative;
+  float: right;
 }
 
 .seagull-flapping {
@@ -10,18 +16,20 @@
   background-repeat: no-repeat;
 }
 
-.silvitko--absolute {
+.silvitko--absolute-home{
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
+
 .silvitko__paddling {
   animation: paddling 2s steps(1, end) infinite;
   height: 100px;
   width: 100px;
-  background-size: 100% 100%; /*resize when in mobile/tablet to make smaller*/
+  background-size: 100% 100%; 
   background-repeat: no-repeat;
+  right: 0;
 }
   
 .silvitko__sailing {
@@ -30,21 +38,8 @@
   float: right;
   height: 100px;
   width: 100px;
-}
-
-@keyframes seagull-flapping {
-  0% {background-image: url("/images/SeagullWingUp.svg");}
-  33% {background-image: url("/images/SeagullWingDown.svg");}
-  66% {background-image: url("/images/SeagullWingUp.svg");}
-  100% {background-image: url("/images/SeagullWingDown.svg");} 
 
 }
-
-@keyframes seagull-flying {
-  from {right:0}
-  to {right:100vw}
-}
-
 
 
 @keyframes paddling {
@@ -60,3 +55,38 @@
   to {right: 100vw;}
 }
 
+@media only screen and (min-width: 850px) {
+  .seagull-flying {
+    animation: seagull-flying 10s linear infinite;
+  }
+  .silvitko__sailing {
+    animation: sailing 13s linear infinite;
+  }
+}
+
+@media only screen and (min-width: 1015px) {
+  .silvitko--absolute {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+@media only screen and (min-width: 1250px) {
+  .seagull-flying {
+    animation: seagull-flying 15s linear infinite;
+  }
+  .silvitko__sailing {
+    animation: sailing 18s linear infinite;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .seagull-flying {
+    animation: seagull-flying 19s linear infinite;
+  }
+  .silvitko__sailing {
+    animation: sailing 23s linear infinite;
+  }
+}
