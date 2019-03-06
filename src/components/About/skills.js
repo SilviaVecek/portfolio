@@ -18,10 +18,10 @@ const Skills = () => {
         <div className="skills">
             <SkillSet image="/images/programming_icon.svg"
                 job="Front End Developer" stack="Tech Stack:"
-                items={["HTML", "CSS", "Javascript"]}
+                items={["HTML", "CSS", "Javascript", "React"]}
             />
             <div className="divider"></div>
-            <SkillSet image="/images/designer_icon.svg" job="Designer" stack="Design Tools:"
+            <SkillSet className="skills-list__right"image="/images/designer_icon.svg" job="Designer" stack="Design Tools:"
                 items={["Sketch", "Pen & Paper", "Balsamiq"]}
             />
         </div>

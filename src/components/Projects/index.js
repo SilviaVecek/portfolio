@@ -10,7 +10,7 @@ const Projects = ({children}) => {
                 <div className="projects-items__box"></div>
                 <div className="projects-items__box"></div>
             </div>
-            <div>
+            <div className="silvitko-projects">
                 {children}
             </div>
         </div>

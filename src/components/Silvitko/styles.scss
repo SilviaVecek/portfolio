@@ -1,12 +1,19 @@
-.silvitko {
-  height: 120px;
+.seagull-flying {
+  animation: seagull-flying 6s linear infinite;
+  position: absolute;
 }
-@media only screen and (min-width: 1015px) {
-  .silvitko--absolute {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
+
+.seagull-flapping {
+  animation: seagull-flapping 1s steps(1, end) infinite;
+  height: 35px;
+  width: 60px;
+  background-repeat: no-repeat;
+}
+
+.silvitko--absolute {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .silvitko__paddling {
@@ -15,49 +22,41 @@
   width: 100px;
   background-size: 100% 100%; /*resize when in mobile/tablet to make smaller*/
   background-repeat: no-repeat;
-  margin-top: -10px;
 }
-
-// .silvitko__sailing-mobile {
-//   animation: sailing-mobile 25s linear infinite;
-//   position: relative;
-//   float: right;
-// }
-
   
 .silvitko__sailing {
-  animation: sailing 25s linear infinite;
+  animation: sailing 10s linear infinite;
   position: relative;
   float: right;
   height: 100px;
   width: 100px;
 }
-// @keyframes sailing {
-//   0% {right:0; bottom: 1vh;}
-//   25% {right:25vw; bottom: 3vh;}
-//   50% {right:50vw; bottom: 2vh;}
-//   75% {right:75vw; bottom: 1vh;}
-//   100% {right:100vw; bottom: 3vh;}
-// }
+
+@keyframes seagull-flapping {
+  0% {background-image: url("/images/SeagullWingUp.svg");}
+  33% {background-image: url("/images/SeagullWingDown.svg");}
+  66% {background-image: url("/images/SeagullWingUp.svg");}
+  100% {background-image: url("/images/SeagullWingDown.svg");} 
+
+}
+
+@keyframes seagull-flying {
+  from {right:0}
+  to {right:100vw}
+}
 
 
-// @keyframes sailing-mobile {
-//   0% {right:0; bottom: 0;}
-//   25% {right:25vw; bottom: 25px;}
-//   50% {right:50vw; bottom: 250px;}
-//   75% {right:75vw; bottom: 25px;}
-//   100% {right:100vw; bottom: 0px;}
-// }
 
-  @keyframes paddling {
-    0% {background-image: url("/images/Paddle_Left_C.svg");}
-    25% {background-image: url("/images/Paddle_Left.svg");}
-    50% {background-image: url("/images/Paddle_Right_C.svg");}
-    75% {background-image: url("/images/Paddle_Right.svg");}
-    100% {background-image: url("/images/Paddle_Right.svg");}
-  }
+@keyframes paddling {
+  0% {background-image: url("/images/Paddle_Left_C.svg");}
+  25% {background-image: url("/images/Paddle_Left.svg");}
+  50% {background-image: url("/images/Paddle_Right_C.svg");}
+  75% {background-image: url("/images/Paddle_Right.svg");}
+  100% {background-image: url("/images/Paddle_Right.svg");}
+}
 
+@keyframes sailing {
+  from {right: 0;} 
+  to {right: 100vw;}
+}
 
-  @media only screen and (min-width: 600px) {
-
-  }

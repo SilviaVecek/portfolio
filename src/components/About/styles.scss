@@ -138,19 +138,27 @@ margin: 10px 0;
         flex-direction: row;
         justify-content: center;
         border-radius: 10px;
-       
+        margin-top: 50px;
     }
     .skill-set {
         border-radius: 0;
-        height: 300px;
-        justify-content: space-evenly;
+        height: 320px;
         padding: 0;
     }
+    .skills-icon {
+        margin-top: 30px;
+    }
 
-    .job {
-        margin: -20px;
+    .skills-list__left {
+        border-radius: 10px 0 0 10px;
     }
-    .stack {
-        margin-bottom: -10px;
+    .skills-list__right {
+      
     }
+    .skills-list {
+        padding: 0;
+
+    }
+
+   
 }

@@ -13,15 +13,14 @@ class App extends Component {
             <div className="App">
 
                 <Header />
-
                 <Home>
-                    <Silvitko className="silvitko--home"/>
+                    <Silvitko className="silvitko--absolute"/>
                 </Home>
                 <About>
-                    <Silvitko className="silvitko--absolute"/>
+                    <Silvitko />
                 </About>
                 <Projects>
-                    <Silvitko className="silvitko--absolute"/>
+                    <Silvitko />
                 </Projects>
                 <Contact />
             </div> 

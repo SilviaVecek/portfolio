@@ -9,7 +9,7 @@ const Silvitko = ({className}) => {
         <div className="seagull-flying">
             <div className="seagull-flapping"></div>
         </div>
-        <div className="silvitko__sailing silvitko__sailing-mobile">
+        <div className="silvitko__sailing">
             <div className="silvitko__paddling"></div>
         </div>
     </footer>
