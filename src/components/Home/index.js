@@ -12,7 +12,6 @@ const Home = ({ children }) => {
                 <div className="home__seagull-flapping"></div>
             </div>
             <img className="home__skyline" src="/images/Skyline.svg"/>
-            {/* <div className="home__waves"></div> */}
             {children}
         </div>
     );

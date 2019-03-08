@@ -69,7 +69,13 @@ $font-family-base: Assistant;
     color: white;
     font-family: $font-family-base;
     padding: 0.2rem;
-    align-self: flex-end;   
+    align-self: flex-end;  
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.05s ease-in-out;
+    &:hover, &:focus {
+      opacity: 0.8;
+    }
   }
   
   .contact-choices {
@@ -102,7 +108,6 @@ $font-family-base: Assistant;
 
 .email {
   cursor: pointer;
-  pointer-events: auto;
   z-index: 1;
   transition: all 0.05s ease-in-out;
   margin: auto 0;
