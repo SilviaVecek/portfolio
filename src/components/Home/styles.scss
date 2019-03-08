@@ -54,32 +54,19 @@
   
   .home__skyline {
     width: 100%;
-    min-width: 750px;
+    min-width: 650px;
     max-height: 40%;
     margin-top: 2%;
-  }
-
-  .home__ocean {
-    display: block;
-    z-index: -1;
-  }
-  .home__waves {
-    width: 100%;
-    height: 40px;
-    bottom: 0;
-    background-image: url("/images/Waves.svg");
-    background-repeat: space repeat-x;
-    background-size: contain;
-    position: absolute;
-    animation: waves 1s linear infinite;
+    position: relative;
   }
 
 
 
-  @keyframes sun {
-    0%   { transform: translate(-100%, 0); }
-    100% { transform: translate(100%, 0); }
-  } 
+
+  // @keyframes sun {
+  //   0%   { transform: translate(-100%, 0); }
+  //   100% { transform: translate(100%, 0); }
+  // } 
   
   @keyframes seagull-flapping {
     0% {background-image: url("/images/SeagullWingUp.svg");}
@@ -94,12 +81,6 @@
     to {right:100vw}
   }
 
-
-  @keyframes waves {
-    0% {bottom: 2%}
-    50% {bottom: 4%}
-    100% {bottom: 2%}
-  }
 
 
   @media only screen and (min-width: 1400px) { 

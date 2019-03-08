@@ -19,7 +19,7 @@ const Contact = () => {
                 <h3 className="contact-choices">Phone:</h3>
                 <h4 className="contact-details">0416188951</h4>
             </div>
-            <img className="contact-icon" src="/images/email.svg" />
+            <a className="email" href="mailto:silvia.vf.92@gmail.com"><img className="contact-icon email--icon" src="/images/email.svg" /></a>
             <div className="contact-choice-box">
                 <h3 className="contact-choices">Email:</h3>
                 <h4 className="contact-details">silvia.vf.92@gmail.com</h4>

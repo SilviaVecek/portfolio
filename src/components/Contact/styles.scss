@@ -99,6 +99,21 @@ $font-family-base: Assistant;
   .phone-box {
     margin-right: 20px;
   }
+
+.email {
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 1;
+  transition: all 0.05s ease-in-out;
+  margin: auto 0;
+  &:hover, &:focus {
+    opacity: 0.8;
+  }
+}
+
+.email--icon {
+  width: 100%;
+}
   
   .contact-options{
     width: 50%;
