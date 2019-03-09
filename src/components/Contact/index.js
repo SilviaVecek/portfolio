@@ -17,10 +17,11 @@ class Contact extends React.Component {
     /* Here’s the juicy bit for posting the form submission */
 
     handleSubmit = e => {
+        const { formSubmitted, formError, ...rest } = this.state;
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact-silvia", ...this.state })
+            body: encode({ "form-name": "contact-silvia", ...rest })
         })
             .then(this.onSuccess)
             .catch(this.onError);
@@ -47,16 +48,21 @@ class Contact extends React.Component {
         const { formSubmitted, formError, name, email, message } = this.state;
         return (
             <>
-                {formSubmitted && <h2 className="question">Thank you for contacting me!</h2>}
-                {formError && <h2 className="question">Sorry, something went wrong!</h2>}
-                <div className="contact" id="contact" onSubmit={this.handleSubmit}>
-                    <h2 className="question">Have a question or want to work together?</h2>
-                    <form method="POST" data-netlify="true" name="contact-silvia" className="contact-form">
-                        <input className="input" type="text" name="name" placeholder="Name" required value={name} onChange={this.handleChange} />
-                        <input className="input" type="email" name="email" placeholder="Email" required value={email} onChange={this.handleChange} />
-                        <input className="input message-box" name="message" type="message" placeholder="Message" required value={message} onChange={this.handleChange} />
-                        <input className="input submit" type="submit" value="Submit" />
-                    </form>
+                {formSubmitted && <h2 className="contact-alternative">Thank you for contacting me!</h2>}
+                {formError && <h2 className="contact-alternative">Sorry, something went wrong!</h2>}
+                
+                <div className="contact" id="contact">
+                    {!formSubmitted && (
+                        <>
+                            <h2 className="question">Have a question or want to work together?</h2>
+                            <form method="POST" data-netlify="true" name="contact-silvia" className="contact-form" onSubmit={this.handleSubmit}>
+                                <input className="input" type="text" name="name" placeholder="Name" required value={name} onChange={this.handleChange} />
+                                <input className="input" type="email" name="email" placeholder="Email" required value={email} onChange={this.handleChange} />
+                                <input className="input message-box" name="message" type="message" placeholder="Message" required value={message} onChange={this.handleChange} />
+                                <input className="input submit" type="submit" value="Submit" />
+                            </form>
+                        </>
+                    )}
                     <h2 className="contact-alternative">Or feel free to drop me a line or email</h2>
                     <div className="contact-options">
                         <img className="contact-icon" src="/images/phone.svg" />
