@@ -48,8 +48,8 @@ class Contact extends React.Component {
         const { formSubmitted, formError, name, email, message } = this.state;
         return (
             <>
-                {formSubmitted && <h2 className="contact-alternative">Thank you for contacting me!</h2>}
-                {formError && <h2 className="contact-alternative">Sorry, something went wrong!</h2>}
+                {formSubmitted && <h2 className="question">Thank you for contacting me!</h2>}
+                {formError && <h2 className="question">Sorry, something went wrong!</h2>}
                 
                 <div className="contact" id="contact">
                     {!formSubmitted && (

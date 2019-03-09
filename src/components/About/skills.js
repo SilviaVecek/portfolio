@@ -18,7 +18,7 @@ const Skills = () => {
         <div className="skills">
             <SkillSet className="skill-set--left" image="/images/programming_icon.svg"
                 job="Front End Developer" stack="Tech Stack:"
-                items={["HTML", "CSS", "Javascript", "React"]}
+                items={["HTML", "SCSS", "Javascript", "React"]}
             />
             <div className="divider"></div>
             <SkillSet className="skill-set--right" image="/images/designer_icon.svg" job="Designer" stack="Design Tools:"
