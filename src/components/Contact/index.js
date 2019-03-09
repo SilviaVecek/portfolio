@@ -2,32 +2,79 @@ import React from 'react';
 import './styles.scss';
 
 
-const Contact = () => {
-    return (
-        <div className="contact" id="contact">
-        <h2 className="question">Have a question or want to work together?</h2>
-        <form method="POST" data-netlify="true" name="contact-silvia" className="contact-form">
-            <input className="input" type="text" name="name" placeholder="Name" required />
-            <input className="input" type="email" name="email" placeholder="Email" required />
-            <input className="input message-box" name="message" type="message" placeholder="Message" required />
-            <input className="input submit" type="submit" value="Submit" />
-        </form>
-        <h2 className="contact-alternative">Or feel free to drop me a line or email</h2>
-        <div className="contact-options">
-            <img className="contact-icon" src="/images/phone.svg" />
-            <div className="contact-choice-box phone-box">
-                <h3 className="contact-choices">Phone:</h3>
-                <h4 className="contact-details">0416188951</h4>
-            </div>
-            <a className="email" href="mailto:silvia.vf.92@gmail.com"><img className="contact-icon email--icon" src="/images/email.svg" /></a>
-            <div className="contact-choice-box">
-                <h3 className="contact-choices">Email:</h3>
-                <h4 className="contact-details">silvia.vf.92@gmail.com</h4>
-            </div>
-        </div>
-        <img className="skyline_contact" src="/images/Skyline_Contact.svg" />
-    </div>
-    );
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
+class Contact extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { name: "", email: "", message: "" };
+    }
+
+    /* Here’s the juicy bit for posting the form submission */
+
+    handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact-silvia", ...this.state })
+        })
+            .then(this.onSuccess)
+            .catch(this.onError);
+
+        e.preventDefault();
+    };
+
+    onSuccess = (response) => {
+        if (!response.ok) {
+            this.onError(response);
+        } else {
+            this.setState({ formSubmitted: true });
+        }
+    }
+
+    onError = (error) => {
+        this.setState({ formError: true });
+        console.error(error);
+    }
+
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+    render() {
+        const { formSubmitted, formError, name, email, message } = this.state;
+        return (
+            <>
+                {formSubmitted && <h2 className="question">Thank you for contacting me!</h2>}
+                {formError && <h2 className="question">Sorry, something went wrong!</h2>}
+                <div className="contact" id="contact" onSubmit={this.handleSubmit}>
+                    <h2 className="question">Have a question or want to work together?</h2>
+                    <form method="POST" data-netlify="true" name="contact-silvia" className="contact-form">
+                        <input className="input" type="text" name="name" placeholder="Name" required value={name} onChange={this.handleChange} />
+                        <input className="input" type="email" name="email" placeholder="Email" required value={email} onChange={this.handleChange} />
+                        <input className="input message-box" name="message" type="message" placeholder="Message" required value={message} onChange={this.handleChange} />
+                        <input className="input submit" type="submit" value="Submit" />
+                    </form>
+                    <h2 className="contact-alternative">Or feel free to drop me a line or email</h2>
+                    <div className="contact-options">
+                        <img className="contact-icon" src="/images/phone.svg" />
+                        <div className="contact-choice-box phone-box">
+                            <h3 className="contact-choices">Phone:</h3>
+                            <h4 className="contact-details">0416188951</h4>
+                        </div>
+                        <a className="email" href="mailto:silvia.vf.92@gmail.com"><img className="contact-icon email--icon" src="/images/email.svg" /></a>
+                        <div className="contact-choice-box">
+                            <h3 className="contact-choices">Email:</h3>
+                            <h4 className="contact-details">silvia.vf.92@gmail.com</h4>
+                        </div>
+                    </div>
+                    <img className="skyline_contact" src="/images/Skyline_Contact.svg" />
+                </div>
+            </>
+        );
+    }
 }
 
 export default Contact
