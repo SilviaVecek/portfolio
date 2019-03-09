@@ -46,11 +46,13 @@ $font-family-base: Assistant;
     font-size: 16px;
   }
   
-  input {
+  input[type=text], input[type=email],textarea {
     padding: 0.5rem;
     border: none;
     border-radius: 0.5rem;
+    font-size: 16px;
   }
+  
   
   .input {
     margin: 10px 0;

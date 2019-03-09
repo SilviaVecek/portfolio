@@ -58,7 +58,7 @@ class Contact extends React.Component {
                             <form method="POST" data-netlify="true" name="contact-silvia" className="contact-form" onSubmit={this.handleSubmit}>
                                 <input className="input" type="text" name="name" placeholder="Name" required value={name} onChange={this.handleChange} />
                                 <input className="input" type="email" name="email" placeholder="Email" required value={email} onChange={this.handleChange} />
-                                <input className="input message-box" name="message" type="message" placeholder="Message" required value={message} onChange={this.handleChange} />
+                                <textarea className="input message-box" name="message" placeholder="Message" required value={message} onChange={this.handleChange} />
                                 <input className="input submit" type="submit" value="Submit" />
                             </form>
                         </>
