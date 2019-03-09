@@ -16,12 +16,12 @@ const SkillSet = ({ image, job, stack, items, className }) => (
 const Skills = () => {
     return (
         <div className="skills">
-            <SkillSet className="skill-set--left" image="/images/programming_icon.svg"
+            <SkillSet className="skill-set--left padding-mobile" image="/images/programming_icon.svg"
                 job="Front End Developer" stack="Tech Stack:"
                 items={["HTML", "SCSS", "Javascript", "React"]}
             />
             <div className="divider"></div>
-            <SkillSet className="skill-set--right" image="/images/designer_icon.svg" job="Designer" stack="Design Tools:"
+            <SkillSet className="skill-set--right padding-mobile" image="/images/designer_icon.svg" job="Designer" stack="Design Tools:"
                 items={["Sketch", "Pen & Paper", "Balsamiq"]}
             />
         </div>

@@ -37,7 +37,6 @@ z-index: -99;
 
 .text {
 text-align: center;
-max-width: 80%;
 font-size: 20px;
 margin: 0 auto;
 color: black;
@@ -63,13 +62,13 @@ color: #FFBD52;
 .skill-set {
     background: white;
     border-radius: 10px;
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 5px 5px 0px #E9F0F3;
     margin-top: 20px;
-    padding: 20px 0;
+    padding: 40px 0;
     max-width: 300px;
 }
 

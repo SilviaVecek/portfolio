@@ -2,20 +2,21 @@ $orange: #FFBD52;
 $blue: #54B9D3;
 
 .projects {
-  padding-top: 100px;
+  padding-top: 120px;
   position: relative;
 }
 
 .text-projects {
   color: $orange;
   text-align: center;
-  max-width: 80%;
+  max-width: 100%;
   font-size: 20px;
   margin: 0 auto;
   font-size: 24px;
 }
 
 .projects-items {
+  padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -25,12 +26,12 @@ $blue: #54B9D3;
   }
   
 .projects-items__box {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   background: $orange;
   border-radius: 20%;
   border: 5px solid white;
-  margin: 10px 0;
+  margin: 15px 0;
   transition: all 0.05s ease-in-out;
   &:hover, &:focus{
     background: rgba(255, 189, 82, 0.7)
