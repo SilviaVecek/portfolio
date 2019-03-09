@@ -14,9 +14,8 @@ const Header = () => {
     const [ page, setPage ] = useState(null);
 
     const handleScroll = (e) => {
-        const scroll = window.scrollY;
-        
-        if (scroll >= grabElement('.contact')){
+        const scroll = window.scrollY + 100;
+        if (scroll >= grabElement('.contact') - 300){
             setPage('contact');
         } else if (scroll >= grabElement('.projects')){
             setPage('projects');
