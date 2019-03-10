@@ -55,7 +55,7 @@ class Contact extends React.Component {
                     {!formSubmitted && (
                         <>
                             <h2 className="question">Have a question or want to work together?</h2>
-                            <form method="POST" data-netlify="true" name="contact-silvia" className="contact-form" onSubmit={this.handleSubmit}>
+                            <form method="POST" data-netlify="true" name="contact-silvia" className="contact-form " onSubmit={this.handleSubmit}>
                                 <input className="input" type="text" name="name" placeholder="Name" required value={name} onChange={this.handleChange} />
                                 <input className="input" type="email" name="email" placeholder="Email" required value={email} onChange={this.handleChange} />
                                 <textarea className="input message-box" name="message" placeholder="Message" required value={message} onChange={this.handleChange} />
@@ -63,20 +63,20 @@ class Contact extends React.Component {
                             </form>
                         </>
                     )}
-                    <h2 className="contact-alternative">Or feel free to drop me a line or email</h2>
+                    <h2 className="contact-alternative ">Or feel free to drop me a line or email</h2>
                     <div className="contact-options">
-                        <img className="contact-icon" src="/images/phone.svg" />
+                        <img className="contact-icon" alt="phone icon" src="/images/phone.svg" />
                         <div className="contact-choice-box phone-box">
                             <h3 className="contact-choices">Phone:</h3>
                             <h4 className="contact-details">0416188951</h4>
                         </div>
-                        <a className="email" href="mailto:silvia.vf.92@gmail.com"><img className="contact-icon email--icon" src="/images/email.svg" /></a>
+                        <a className="email" href="mailto:silvia.vf.92@gmail.com"><img className="contact-icon email--icon" alt="email icon" src="/images/email.svg" /></a>
                         <div className="contact-choice-box">
                             <h3 className="contact-choices">Email:</h3>
                             <h4 className="contact-details">silvia.vf.92@gmail.com</h4>
                         </div>
                     </div>
-                    <img className="skyline_contact" src="/images/Skyline_Contact.svg" />
+                    <img className="skyline_contact" alt="sydney skyline image" src="/images/Skyline_Contact.svg" />
                 </div>
             </>
         );
