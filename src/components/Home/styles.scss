@@ -64,10 +64,10 @@
 
 
 
-  // @keyframes sun {
-  //   0%   { transform: translate(-100%, 0); }
-  //   100% { transform: translate(100%, 0); }
-  // } 
+  @keyframes sun {
+    0%   { transform: translate(-100%, 0); }
+    100% { transform: translate(100%, 0); }
+  } 
   
   @keyframes seagull-flapping {
     0% {background-image: url("/images/SeagullWingUp.svg");}
