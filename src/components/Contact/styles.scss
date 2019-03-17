@@ -31,6 +31,8 @@ $font-family-base: Assistant;
   color: #54B9D3;
   text-align: center;
   margin-top: 100px;
+  font-size: 24px;
+  margin-bottom: 50px;
 }
 
 .contact-alternative {
@@ -39,6 +41,7 @@ $font-family-base: Assistant;
   text-align: center;
   width: 80%;
   align-self: center;
+  font-size: 24px;
 }
 
 .skyline_contact {
@@ -155,15 +158,13 @@ width: 100%;
   }
 }
 
-@media only screen and (min-width: 700px) {
-  .contact-icon {
-    width: 100%;
-  }
-}
 
 @media only screen and (min-width: 1000px) {
   .contact-form {
     width: 50%;
+  }
+  .question {
+    margin-top: 60px;
   }
 }
 
