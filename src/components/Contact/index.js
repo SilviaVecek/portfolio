@@ -65,15 +65,19 @@ class Contact extends React.Component {
                     )}
                     <h2 className="contact-alternative ">Or feel free to drop me a line or email</h2>
                     <div className="contact-options">
-                        <img className="contact-icon" alt="phone icon" src="/images/phone.svg" />
-                        <div className="contact-choice-box phone-box">
-                            <h3 className="contact-choices">Phone:</h3>
-                            <h4 className="contact-details">0416188951</h4>
+                        <div className="contact-phone">
+                            <img className="contact-icon" alt="phone icon" src="/images/phone.svg" />
+                            <div className="contact-choice-box phone-box">
+                                <h3 className="contact-choices">Phone:</h3>
+                                <h4 className="contact-details">0416188951</h4>
+                            </div>
                         </div>
-                        <a className="email" href="mailto:silvia.vf.92@gmail.com"><img className="contact-icon email--icon" alt="email icon" src="/images/email.svg" /></a>
-                        <div className="contact-choice-box">
-                            <h3 className="contact-choices">Email:</h3>
-                            <h4 className="contact-details">silvia.vf.92@gmail.com</h4>
+                        <div className="contact-email">
+                            <a className="email" href="mailto:silvia.vf.92@gmail.com"><img className="contact-icon email--icon" alt="email icon" src="/images/email.svg" /></a>
+                            <div className="contact-choice-box">
+                                <h3 className="contact-choices">Email:</h3>
+                                <h4 className="contact-details">silvia.vf.92@gmail.com</h4>
+                            </div>
                         </div>
                     </div>
                     <img className="skyline_contact" alt="sydney skyline image" src="/images/Skyline_Contact.svg" />

@@ -34,10 +34,32 @@ $blue: #54B9D3;
   margin: 15px 0;
   transition: all 0.05s ease-in-out;
   &:hover, &:focus{
-    background: rgba(255, 189, 82, 0.7)
+    background: rgba(255, 189, 82, 0.7);
   }
 }
 
+.memorise {
+  background-image: url("/images/chickAndHen.svg");
+  background-repeat: no-repeat;
+  &:hover {
+    background-image: url("/images/chickAndHen.svg");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+  }
+}
+
+.memorise__text{
+  text-decoration: none;
+  font-size: 36px;
+  justify-content: center;
+  align-self: center;
+  color: $blue;
+  display: flex;
+  visibility: hidden;
+  &:hover {
+    visibility: visible;
+  }
+}
 
 @media only screen and (min-width: 1015px) {
   .projects {

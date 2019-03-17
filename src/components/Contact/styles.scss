@@ -1,167 +1,189 @@
 $font-family-base: Assistant;
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    position: relative;
-    min-height: 800px;
-    width: 100%;
-    padding-bottom: 70px;
-  }
-  
-  .contact-form {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    width: 80%;
-  }
-  
-  .contact-options {
-    display: flex;
-    align-self: center;
-  }
-  
-  .question {
-    color: #54B9D3;
-    text-align: center;
-  }
-  
-  .contact-alternative {
-    margin-top: 30px;
-    color: #FFBD52;
-    text-align: center;
-  }
-  
-  .skyline_contact {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  ::placeholder {
-    color: rgba(255,189,82,0.34);
-    font-family: $font-family-base;
-    font-size: 16px;
-  }
-  
-  input[type=text], input[type=email],textarea {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 16px;
-  }
-  
-  textarea {
-    width: 95%;
-  }
-  
-  .input {
-    margin: 10px 0;
-  }
-  
-  .message-box {
-    height: 200px;
-  }
-  
-  .submit {
-    width: 100px;
-    border: 0.3rem solid white;
-    border-radius:0.5rem;
-    background: #54B9D3;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    font-family: $font-family-base;
-    padding: 0.2rem;
-    align-self: flex-end;  
-    cursor: pointer;
-    z-index: 1;
-    transition: all 0.05s ease-in-out;
-    &:hover, &:focus {
-      opacity: 0.8;
-    }
-  }
-  
-  .contact-choices {
-    color: #54B9D3;
-    font-size: 20px;
-    margin-bottom: 0;
-  }
-  
-  .contact-details {
-    text-shadow: 2px 2px 1px white;
-    margin-top: 1em;
-  }
-  
-  .contact-choice-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contact-icon {
-    max-width: 80px;
-    width: 30%;
-    height: auto;
-    margin-right: 5px;
-    min-width: 55px;
-  }
-  
-  .phone-box {
-    margin-right: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  min-height: 800px;
+  width: 100%;
+  padding-bottom: 70px;
+}
 
-.email {
+.contact-form {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.contact-options {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-evenly;   
+  align-items: center;
+}
+
+.question {
+  color: #54B9D3;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact-alternative {
+  margin-top: 30px;
+  color: #FFBD52;
+  text-align: center;
+  width: 80%;
+  align-self: center;
+}
+
+.skyline_contact {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+::placeholder {
+  color: rgba(255,189,82,0.34);
+  font-family: $font-family-base;
+  font-size: 16px;
+}
+
+input[type=text], input[type=email],textarea {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 16px;
+}
+
+
+.input {
+  margin: 10px 0;
+}
+
+.message-box {
+  height: 200px;
+}
+
+.submit {
+  width: 100px;
+  border: 0.3rem solid white;
+  border-radius:0.5rem;
+  background: #54B9D3;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: $font-family-base;
+  padding: 0.2rem;
+  align-self: flex-end;  
   cursor: pointer;
   z-index: 1;
   transition: all 0.05s ease-in-out;
-  margin: auto 0;
   &:hover, &:focus {
     opacity: 0.8;
   }
 }
 
-.email--icon {
-  width: 100%;
+.contact-choices {
+  color: #54B9D3;
+  font-size: 20px;
+  margin-bottom: 0;
 }
-  
-  .contact-options{
+
+.contact-details {
+  text-shadow: 2px 2px 1px white;
+  margin-top: 1em;
+}
+
+.contact-choice-box {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.contact-icon {
+  max-width: 80px;
+  width: 30%;
+  height: auto;
+  margin-right: 5px;
+  min-width: 55px;
+}
+
+.phone-box {
+  margin-right: 20px;
+}
+
+.email {
+cursor: pointer;
+z-index: 1;
+transition: all 0.05s ease-in-out;
+margin: auto 0;
+&:hover, &:focus {
+  opacity: 0.8;
+}
+}
+
+.email--icon {
+width: 100%;
+}
+
+
+.contact-phone, .contact-email {
+  display: flex;
+  width: 80%;
+}
+
+@media only screen and (min-width: 700px) {
+  .contact-form {
+    width: 60%;
+  }
+  .skyline_contact {
+    width: 80%;
+  }
+  .contact-options {
+    flex-direction: row;
     width: 50%;
-    justify-content: space-evenly;
   }
+  .contact-phone , .contact-email {
+    flex-direction: row;
+  }
+}
 
-  @media only screen and (min-width: 700px) {
-    .contact-form {
-      width: 60%;
-    }
-    .skyline_contact {
-      width: 80%;
-    }
+@media only screen and (min-width: 700px) {
+  .contact-icon {
+    width: 100%;
   }
+}
 
-  @media only screen and (min-width: 1000px) {
-    .contact-form {
-      width: 50%;
-    }
+@media only screen and (min-width: 1000px) {
+  .contact-form {
+    width: 50%;
   }
+}
 
-  @media only screen and (min-width: 1280px) {
-    .contact-form {
-      width: 40%;
-    }
-    .contact-options {
-      width: 40%;
-    }
-    .skyline_contact {
-      width: 70%;
-    }
+@media only screen and (min-width: 1280px) {
+  .contact-form {
+    width: 40%;
   }
+  .contact-options {
+    width: 40%;
+  }
+  .skyline_contact {
+    width: 70%;
+  }
+}
 
-  @media only screen and (min-width: 1400px) {
-    .contact-options {
-      width: 30%;
-    }
+@media only screen and (min-width: 1400px) {
+  .contact-options {
+    width: 30%;
   }
+  .contact-icon {
+    width: 80px;
+  }
+}
