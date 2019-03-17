@@ -6,7 +6,7 @@ const Projects = ({children}) => {
         <div className="projects" id="projects">  
             <div className="text-projects">Check out some of my other work!</div>
             <div className="projects-items">
-                <div className="projects-items__box"></div>
+                <a href="https://goofy-beaver-c88cd1.netlify.com/" className="projects-items__box" />
                 <div className="projects-items__box"></div>
                 <div className="projects-items__box"></div>
             </div>

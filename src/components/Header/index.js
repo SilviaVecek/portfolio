@@ -46,7 +46,6 @@ const Header = () => {
                     <ListItem label="About" page={page} link="about"/>
                     <ListItem label="Projects" page={page} link="projects"/>
                     <ListItem label="Contact" page={page} link="contact"/>
-
                 </ul>
             </div>
         </header>
