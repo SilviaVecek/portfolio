@@ -8,7 +8,7 @@ $blue: #54B9D3;
     top: 0;
     z-index: 33;
     background: rgba(236,247,252, 0.5);
-  }
+}
 
 .header__bar {
     min-width: 100%;
@@ -21,7 +21,7 @@ $blue: #54B9D3;
 
 .header__bar--second {
     background: white;
-    box-shadow: 0px 2px 4px 0px #D9D9D9;
+    box-shadow: 0 2px 4px 0 #D9D9D9;
 }
 
 .header-nav {
@@ -31,10 +31,10 @@ $blue: #54B9D3;
 }
 
 .header-nav__face {
-    padding: 5px 0px 0px 5px;
+    padding: 5px 0 0 5px;
     width: 100%;
     max-width: 70px;
-  }
+}
   
 
   
@@ -57,7 +57,7 @@ $blue: #54B9D3;
     &:hover, &:focus {
         color: $blue;
         font-weight: bold;
-        text-shadow: 2px 2px 0px white;
+        text-shadow: 2px 2px 0 white;
     }
 
     &:active {
@@ -68,7 +68,7 @@ $blue: #54B9D3;
 .header-nav__list-link--active {
     color: $orange;
     font-weight: bold;
-    text-shadow: 1px 1px 0px white;
+    text-shadow: 1px 1px 0 white;
 }
 
 @media only screen and (min-width: 402px) {
