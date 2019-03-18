@@ -75,6 +75,12 @@ $secondary-font: Roboto;
     font-family: $secondary-font;
 }
 
+.project__text--heading {
+    text-shadow: 0 0 2px #fff,
+        -1px -1px 0 #727272,
+        -1px -1px 1px #867b7b,
+        -1px 0 1px #292828;
+}
 
 .project-items__background--memorise, .project-items__background--stream-jokes{
     background-position: center center;
@@ -96,12 +102,12 @@ $secondary-font: Roboto;
     visibility: hidden;
     text-align: center;
     padding-top: 50px;
-    text-shadow: 1px 2px 2px rgb(150, 147, 147);
+
 }
 
 .project__text-items {
     margin-top: 25px;
-    font-weight: bold;
+    font-weight: 600;
     color: black;
     font-size: 20px;
     list-style-type: disc;
