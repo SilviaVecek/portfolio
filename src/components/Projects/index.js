@@ -4,11 +4,30 @@ import './styles.scss';
 const Projects = ({children}) => {
     return (
         <div className="projects" id="projects">  
-            <div className="text-projects">Check out some of my other work!</div>
+            <h2 className="text-projects">Check out some of my other work!</h2>
             <div className="projects-items">
-                <a href="https://goofy-beaver-c88cd1.netlify.com/" className="projects-items__box memorise" ><div className="memorise__text">Pexeso</div></a>
-                <div className="projects-items__box"></div>
-                <div className="projects-items__box"></div>
+                <a href="https://goofy-beaver-c88cd1.netlify.com/" className="projects-items__box">
+                    <div className="project-items__background project-items__background--memorise"></div>
+                    <div className="project__text">
+                        <h3>Memory Game</h3>
+                        <ul className="project__text-items">
+                            <li>React</li>
+                            <li>SCSS</li>
+                            <li>High Fidelity Design (Sketch)</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="https://www.streamjokes.com/" className="projects-items__box" >
+                    <div className="project-items__background project-items__background--stream-jokes"></div>
+                    <div className="project__text">
+                        <h3>StreamJokes</h3>
+                        <ul className="project__text-items">
+                            <li>UX</li>
+                            <li>Wireframe</li>
+                            <li>High Fidelity Design (Sketch)</li>
+                        </ul>
+                    </div>
+                </a>
             </div>
             <div className="silvitko-projects">
                 {children}
