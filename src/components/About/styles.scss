@@ -1,3 +1,5 @@
+$secondary-font: "Roboto";
+
 .about {
     position: relative;
 }
@@ -44,10 +46,14 @@ color: black;
 
 .text--code {
 color: #53B8D2;
+font-family: $secondary-font;
+text-shadow: 2px 2px 0px white;
 }
 
 .text--design {
 color: #FFBD52;
+font-family: $secondary-font;
+text-shadow: 2px 2px 0px white;
 }
 
 .skills {
@@ -79,13 +85,15 @@ color: #FFBD52;
 
 .job {
 color: #F5A623;
-text-shadow: 1px 1px 1px #BDBDBD;
-margin: 10px 0;
+margin: 20px 0 10px 0;
+font-size: 24px;
+font-family: Roboto;
 }
 
 .stack {
 color: #53B8D2;
-margin: 10px 0;
+margin: 20px 0;
+font-size: 20px;
 }
 
 .skills-list {

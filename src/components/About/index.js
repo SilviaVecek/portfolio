@@ -12,7 +12,7 @@ const About = ({ children}) => {
             <div className="about-content">
                 <h1 className="text padding-mobile">I’m a Front End Developer located in Sydney. I love to <span className="text--code">code</span>, am passionate about<span className="text--design"> UI/UX design</span> and creating an intuitive and aesthically pleasing interface</h1>
                 <Skills />
-            <div>
+                <div>
                     {children}
                 </div>
             </div>

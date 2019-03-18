@@ -1,4 +1,5 @@
 $font-family-base: Assistant;
+$secondary-font: Roboto;
 
 .contact {
   display: flex;
@@ -33,6 +34,7 @@ $font-family-base: Assistant;
   margin-top: 100px;
   font-size: 24px;
   margin-bottom: 50px;
+  font-family: $secondary-font;
 }
 
 .contact-alternative {
@@ -42,6 +44,7 @@ $font-family-base: Assistant;
   width: 80%;
   align-self: center;
   font-size: 24px;
+  font-family: $secondary-font;
 }
 
 .skyline_contact {

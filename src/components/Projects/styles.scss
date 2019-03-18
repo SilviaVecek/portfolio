@@ -2,6 +2,7 @@ $orange: #FFBD52;
 $blue: #54B9D3;
 $red: #FF4F6D;
 $memorise-background: #f0f0f0;
+$secondary-font: Roboto;
 
 .projects {
   padding-top: 120px;
@@ -66,6 +67,10 @@ $memorise-background: #f0f0f0;
   right: 0;
 }
 
+.project__text--heading, .text-projects {
+  font-family: $secondary-font;
+}
+
 
 .project-items__background--memorise, .project-items__background--stream-jokes{
   background-position: center center;
@@ -108,11 +113,7 @@ $memorise-background: #f0f0f0;
     position: relative;
     margin: 0;
     min-height: 800px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding: 0;
-    justify-content: center; 
   }
   .projects-items {
     flex-direction: row;

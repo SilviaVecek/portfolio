@@ -7,7 +7,7 @@ $blue: #54B9D3;
     height: 85px;
     top: 0;
     z-index: 33;
-    background: rgba(236,247,252, 0.1);
+    background: rgba(236,247,252, 0.5);
   }
 
 .header__bar {
@@ -33,7 +33,7 @@ $blue: #54B9D3;
 .header-nav__face {
     padding: 5px 0px 0px 5px;
     width: 100%;
-    max-width: 100px;
+    max-width: 70px;
   }
   
 
@@ -73,12 +73,6 @@ $blue: #54B9D3;
 
 @media only screen and (min-width: 402px) {
     .header {
-        height: 130px;
-    }
-}
-
-@media only screen and (min-width: 460px) {
-    .header-nav__list {
-        margin-top: -3rem;
+        height: 100px;
     }
 }

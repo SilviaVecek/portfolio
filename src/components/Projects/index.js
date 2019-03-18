@@ -9,7 +9,7 @@ const Projects = ({children}) => {
                 <a href="https://goofy-beaver-c88cd1.netlify.com/" className="projects-items__box">
                     <div className="project-items__background project-items__background--memorise"></div>
                     <div className="project__text">
-                        <h3>Memory Game</h3>
+                        <h3 className="project__text--heading">Memory Game</h3>
                         <ul className="project__text-items">
                             <li>React</li>
                             <li>SCSS</li>
@@ -20,7 +20,7 @@ const Projects = ({children}) => {
                 <a href="https://www.streamjokes.com/" className="projects-items__box" >
                     <div className="project-items__background project-items__background--stream-jokes"></div>
                     <div className="project__text">
-                        <h3>StreamJokes</h3>
+                        <h3 className="project__text--heading">StreamJokes</h3>
                         <ul className="project__text-items">
                             <li>UX</li>
                             <li>Wireframe</li>
