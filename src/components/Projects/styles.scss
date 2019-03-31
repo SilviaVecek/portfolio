@@ -17,6 +17,7 @@ $secondary-font: Roboto;
     margin: 0 auto;
     font-size: 24px;
     padding-top: 50px;
+    width: 80%;
 }
 
 .projects-items {
@@ -39,10 +40,11 @@ $secondary-font: Roboto;
     position: relative;
 
     &:hover, &:focus{
-        background-color: rgba(255, 189, 82, 0.7);
+        background-color: $memorise-background;
 
         .project-items__background {
-            filter: blur(2px);
+            filter: blur(4px);
+            opacity: 0.5;
         }
 
         .project__text{
@@ -80,13 +82,10 @@ $secondary-font: Roboto;
 }
 
 .project__text--heading {
-    text-shadow: 0 0 2px #fff,
-        -1px -1px 0 #727272,
-        -1px -1px 1px #867b7b,
-        -1px 0 1px #292828;
+
 }
 
-.project-items__background--memorise, .project-items__background--stream-jokes{
+.project-items__background--memorise, .project-items__background--stream-jokes, .project-items__background--tictactoe{
     background-position: center center;
     background-color: $memorise-background;
     background-repeat: no-repeat;
@@ -94,14 +93,13 @@ $secondary-font: Roboto;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 2px 2px 2px black;
     transition: all 0.3s ease-in-out;
 }
 
 .project__text{
     font-size: 36px;
     font-weight: bold;
-    color: $red;
+    color: $blue;
     transition: all 0.3s ease-in-out;
     opacity: 0;
     text-align: center;
@@ -112,13 +110,15 @@ $secondary-font: Roboto;
 .project__text-items {
     margin-top: 25px;
     font-weight: 600;
-    color: black;
+    color:  black;
     font-size: 20px;
     list-style-type: disc;
     text-align: left;
     margin-left: 40px;
     line-height: 1.25;
+
 }
+
 
 
 

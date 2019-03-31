@@ -40,9 +40,9 @@ const Projects = ({children}) => {
                     </div>
                 </a>
             </div>
-            <div className="silvitko-projects">
+            {/* <div className="silvitko-projects">
                 {children}
-            </div>
+            </div> */}
         </div>
     );
 }

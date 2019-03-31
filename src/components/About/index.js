@@ -10,11 +10,11 @@ const About = ({ children}) => {
             </div>
             <img className="about-header__profile_picture" src="/images/Display_Pic.png" />
             <div className="about-content">
-                <h1 className="text padding-mobile">I’m a Front End Developer located in Sydney. I love to <span className="text--code">code</span>, am passionate about<span className="text--design"> UI/UX design</span> and creating an intuitive and aesthically pleasing interface</h1>
+                <h1 className="text padding-mobile">I’m a self taught Front End Developer based in Sydney. I like to <span className="text--design">doodle and draw</span> my ideas down and bring them to life through <span className="text--code">coding</span> and Sketch</h1>
                 <Skills />
-                <div>
+                {/* <div>
                     {children}
-                </div>
+                </div> */}
             </div>
         </div>
     );
