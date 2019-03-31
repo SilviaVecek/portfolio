@@ -28,6 +28,17 @@ const Projects = ({children}) => {
                         </ul>
                     </div>
                 </a>
+                <a href="https://elegant-knuth-50f845.netlify.com/" target="_blank" className="projects-items__box" >
+                    <div className="project-items__background project-items__background--tictactoe"></div>
+                    <div className="project__text">
+                        <h3 className="project__text--heading">TicTacToe</h3>
+                        <ul className="project__text-items">
+                            <li>React</li>
+                            <li>SCSS</li>
+                            <li>High Fidelity Design (Sketch)</li>
+                        </ul>
+                    </div>
+                </a>
             </div>
             <div className="silvitko-projects">
                 {children}

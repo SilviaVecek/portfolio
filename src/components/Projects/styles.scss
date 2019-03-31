@@ -62,6 +62,11 @@ $secondary-font: Roboto;
     background-size: contain;
 }
 
+.project-items__background--tictactoe {
+    background-image: url("/images/tictactoe.gif");
+    background-size: contain;
+}
+
 .project-items__background, .project__text {
     position: absolute;
     top: 0;
